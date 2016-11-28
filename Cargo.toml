@@ -1,0 +1,16 @@
+[package]
+
+name = "yatekii_ch"
+version = "0.0.1"
+authors = [ "Noah Huesser <yatekii@yatekii.ch>" ]
+
+[features]
+## create a feature in your app
+watch = ["handlebars-iron/watch"]
+
+[dependencies]
+
+iron = "*"
+router = "*"
+handlebars-iron = "*"
+rustc-serialize = "*"

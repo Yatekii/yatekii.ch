@@ -1,0 +1,218 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>yatekii.ch</title>
+  <meta name="description" content="yatekii.ch">
+  <meta name="author" content="Yatekii">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <style>
+    @font-face {
+      font-family: Lato Thin;
+      src: url(fonts/lato/Lato-Thin.ttf);
+    }
+    @font-face {
+      font-family: Lato Light;
+      src: url(fonts/lato/Lato-Light.ttf);
+    }
+    @font-face {
+      font-family: Lato Light Italic;
+      src: url(fonts/lato/Lato-LightItalic.ttf);
+    }
+    @font-face {
+      font-family: Lato Bold;
+      src: url(fonts/lato/Lato-Bold.ttf);
+    }
+    body {
+      font-family: Lato Light;
+      display: flex;
+      flex-flow: row;
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: Lato Thin;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-family: Lato Bold;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    h3 {
+      font-family: Lato Light;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    p {
+      font-family: Lato Light;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    div#brief {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 300px;
+      margin: 100px;
+      margin-right: 0px;
+    }
+    div#main{
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      margin: 100px;
+      margin-left: 0px;
+    }
+    span.it{
+      font-family: Lato Light;
+      font-style: italic;
+    }
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+
+  <div id="brief">
+    <h1>Profile</h1>
+    <h2>Basics</h2>
+    <p>Nationality <br />
+    Date of Birth: 12th January 1991</p>
+
+    <h2>Contact</h2>
+    <p>yatekii@yatekii.ch<br />
+    +41 79 960 7130
+    </p><p>
+    Eggenstrasse 3<br />
+    5616 Meisterschwanden<br />
+    Switzerland</p>
+    <h2>Activities</h2>
+    <p>Ju Jitsu, Programming,<br />
+    Electronics, Reading
+    </p>
+    <h1>Skills</h1>
+    <h2>Professional</h2>
+    <p>Software Development</br>
+    Embedded Systems</br>
+    FPGA Programming</br>
+    Electronical Prototyping</br>
+    Problem Solving</br>
+    Project Management</p>
+    <h2>Languages</h2>
+    <p>German mother tongue</br>
+    English fluent</br>
+    French experienced</p>
+    <h1>Tools</h1>
+    <h2>Engineering</h2>
+    <p>Altium/KiCad</br>
+    Shell</br>
+    Jupyter, Scipy, Numpy, Pandas</br>
+    MATLAB</br>
+    Inventor
+    <h2>Programming</h2>
+    <p><span class="it">frequently used</span></br>
+    Python, C, C++,</br>
+    JavaScript, SQL, LaTeX</p>
+    <p><span class="it">used in the past</span></br>
+    VHDL, Java, C#, PHP, Bash</p>
+    <h2>Miscellaneous</h2>
+    <p>Git/SVN</br>
+    Microsoft Office</br>
+    Photoshop / InDesign</p>
+  </div>
+  <div id="main">
+    <h1>Education</h1>
+    <h2>FHNW Brugg-Windisch</h2>
+    <h3>BsC in Electrical Engineering and Information Technology</h3>
+    <p>
+      <span class="time">February 2016 – present</span> | <span class="location">Brugg-Windisch, CH</span>
+    </p>
+    <h2>ETH Zürich</h2>
+    <h3>BsC in Electrical Engineering and Information Technology</h3>
+    <p>
+      <span class="time">September 2013 – February 2016</span> | <span class="location">Zürich, CH</span>
+    </p>
+    <h2>Alte Kantonsschule Aarau</h2>
+    <h3>Matura</h3>
+    <p>
+      <span class="time">Graduated 2012</span> | <span class="location">Aarau, CH</span>
+    </p>
+    <h1>Practical Experience</h1>
+    <h2>Bastli</h2>
+    <h3>President</h3>
+    <p>
+      <span class="time">February 2016 – October 2016</span> | <span class="location">Zürich, CH</span>
+    </p>
+    <h3>Quaestor</h3>
+    <p>
+      <span class="time">February 2015 – October 2016</span> | <span class="location">Zürich, CH</span>
+    </p>
+    <h3>Active Member</h3>
+    <p>
+      <span class="time">September 2013 – present</span> | <span class="location">Zürich, CH</span><br />
+      Bastli is the student's electronics lab at ETH Zürich.
+      With Bastli we realize various, cool engineering projects. Most of the things we create are assembled from parts salvaged from the Junkyard.
+      Impressions on what we do at \textit{www.bastli.ch}.
+    </p>
+    <h2>Nexus Telecom</h2>
+    <h3>Low Level C Programmer</h3>
+    <p>
+      <span class="time">Mai 2014 – Mai 2015</span> | <span class="location">Zürich, CH</span><br />
+      Diverse work on a C library with focus on porting it from 32 to 64 bit.
+    </p>
+    <h2>AFC AG - Air Flow Consulting</h2>
+    <h3>Internship as a Programer</h3>
+    <p>
+      <span class="time">December 2012 – April 2013</span> | <span class="location">Zürich, CH</span><br />
+      Creation of various tools in Python, C\# and VB, working as a one man team.
+    </p>
+    <h2>wapple.ch</h2>
+    <h3>Webdesigner and Co-Founder</h3>
+    <p>
+      <span class="time">Janury 2007  – present</span> | <span class="location">Zürich, CH</span><br />
+      Webdesign for individuals, associations and companies in cooperation with a friend.
+    </p>
+    <h1>Publications and Projects</h1>
+    <h2>Design and Implementation of an FPGA Based Data Logging and Fault Recording System for PWM Rectifiers</h2>
+    <h3>Group Thesis at ETH Zürich</h3>
+    <p>
+      <span class="time">September 2015  – December 2015</span> | <span class="location">Zürich, CH</span><br />
+      <ul>
+        <li>Recursive trigger logic to detect special signal patterns (VHDL)</li>
+        <li>Kernel module for data reading and processing on an ARM Core A9 (C)</li>
+        <li>GUI to retrieve data over the network, filter and display it (C++, Python, Qt5)</li>
+      </ul>
+    </p>
+    <h2>230V Switch</h2>
+    <h3>Bluetooth Controlled Two Channel 230V Switch, Private Project</h3>
+    <p>
+      <span class="time">November 2015  – present</span> | <span class="location">Zürich, CH</span><br />
+      Design of PCB and Software that feature dimming, master/slave, timer and bluetooth control of ordinary power outlets. Proof of concept works.
+    </p>
+    <h2>backdoor</h2>
+    <h3>Modular NFC Auth System, Private Project</h3>
+    <p>
+      <span class="time">December 2014  – June 2015</span> | <span class="location">Zürich, CH</span><br />
+      A system to manage access on devices such as the door to our backyard or a beer dispenser.
+    </p>
+  </div>
+</body>
+</html>
