@@ -66,12 +66,36 @@
     a{
       color: black;
       text-decoration: none;
+      position: relative;
     }
-    a:hover{
-      color: black;
-      text-decoration: none;
-      background-color: gray;
-    }
+      a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -5px;
+        width: 4px;
+        height: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #658E15;
+        /* Firefox 3.0 damage limitation */
+        display: block;
+      }
+      a:hover:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -5px;
+        width: 4px;
+        height: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #658E15;
+        background-color: #658E15;
+        /* Firefox 3.0 damage limitation */
+        display: block;
+      }
+
     div#brief {
       flex-grow: 0;
       flex-shrink: 0;
@@ -90,6 +114,7 @@
       font-family: Lato Light;
       font-style: italic;
     }
+
   </style>
 
   <!--[if lt IE 9]>
@@ -114,7 +139,7 @@
     5616 Meisterschwanden<br />
     Switzerland</p>
     <h2>Activities</h2>
-    <p><a href="#ju-jitsu">Ju Jitsu</a>, <a href="#programming">Programming</a>,<br />
+    <p><a href="#ju-jitsu">Ju Jitsu<span class="note">KEKEKEK</span></a>, <a href="#programming">Programming</a>,<br />
     <a href="#electronics">Electronics</a>, <a href="#reading">Reading</a>
     </p>
     <h1>Skills</h1>
@@ -165,6 +190,12 @@
       <span class="time">Graduated 2012</span> | <span class="location">Aarau, CH</span>
     </p>
     <h1>Practical Experience</h1>
+    <h2>ABB</h2>
+    <h3>Internship</h3>
+    <p>
+      <span class="time">July 2016 – present</span> | <span class="location">Zürich, CH</span><br />
+      Diverse work in VB.NET/C#, working with WPF, MSQL, et al. Implementing various requests for tools and scripts for the development department that emerge daily.
+    </p>
     <h2>Bastli</h2>
     <h3>President</h3>
     <p>
