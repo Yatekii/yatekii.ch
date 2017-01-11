@@ -1,0 +1,136 @@
+    @font-face {
+      font-family: Lato Thin;
+      src: url(fonts/lato/Lato-Thin.ttf);
+    }
+    @font-face {
+      font-family: Lato Light;
+      src: url(fonts/lato/Lato-Light.ttf);
+    }
+    @font-face {
+      font-family: Lato Light Italic;
+      src: url(fonts/lato/Lato-LightItalic.ttf);
+    }
+    @font-face {
+      font-family: Lato Bold;
+      src: url(fonts/lato/Lato-Bold.ttf);
+    }
+    body {
+      font-family: Lato Light;
+      display: flex;
+      flex-flow: row;
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+      margin: 0;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: Lato Thin;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-family: Lato Bold;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    h3 {
+      font-family: Lato Light;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    p {
+      font-family: Lato Light;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+      position: relative;
+    }
+      a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -0.3em;
+        width: 0.25em;
+        height: 0.25em;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #658E15;
+        /* Firefox 3.0 damage limitation */
+        display: block;
+      }
+      a:hover:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -0.3em;
+        width: 0.25em;
+        height: 0.25em;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #658E15;
+        background-color: #658E15;
+        /* Firefox 3.0 damage limitation */
+        display: block;
+      }
+
+    div#nav {
+        position: fixed;
+        height: 100px;
+        width: 100%;
+        padding: 100px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 0;
+        margin: 0;
+        background-color: grey;
+        vertical-align: middle;
+        line-height: 100px;
+    }
+
+    div#nav a {
+        text-transform: uppercase;
+        font-family: Lato Thin;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 50px;
+        vertical-align: middle;
+    }
+
+    div#nav a:before {
+        border: none;
+        background: none;
+    }
+
+    div#brief {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 300px;
+      margin: 100px;
+      margin-right: 0px;
+    }
+    
+    div#main{
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      margin: 100px;
+      margin-left: 0px;
+    }
+
+    span.it{
+      font-family: Lato Light;
+      font-style: italic;
+    }
