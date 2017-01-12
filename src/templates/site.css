@@ -55,6 +55,7 @@
       color: black;
       text-decoration: none;
       position: relative;
+      z-index: 2;
     }
       a:before {
         content: "";
@@ -86,16 +87,18 @@
 
     div#nav {
         position: fixed;
-        height: 100px;
+        height: 80px;
         width: 100%;
         padding: 100px;
         padding-top: 0px;
         padding-bottom: 0px;
         border: 0;
         margin: 0;
-        background-color: grey;
+        background: white;
+        border-bottom: 1px solid grey;
         vertical-align: middle;
-        line-height: 100px;
+        line-height: 80px;
+        z-index: 3;
     }
 
     div#nav a {
@@ -104,15 +107,16 @@
         padding-bottom: 0px;
         margin-bottom: 0px;
         padding-top: 0px;
+        margin-right: 4em;
         margin-top: 0px;
         font-size: 50px;
         vertical-align: middle;
     }
 
-    div#nav a:before {
+    /*div#nav a:before {
         border: none;
         background: none;
-    }
+    }*/
 
     div#brief {
       flex-grow: 0;
